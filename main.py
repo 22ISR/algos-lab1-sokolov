@@ -72,9 +72,14 @@ hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0
 hint: https://letpy.com/handbook/builtins/reversed/
 """
 
-x = int(input("Введите числа"))
-
-
+def is_palindrome(value):
+    value_str = str(value).replace(" ", "").lower()
+    return value_str == value_str[::-1]
+user_input = input("Введите строку или число: ")
+if is_palindrome(user_input):
+    print(f'"{user_input}" является палиндромом.')
+else:
+    print(f'"{user_input}" не является палиндромом.')
 
 """
  _____         _      _____ 
@@ -88,8 +93,12 @@ x = int(input("Введите числа"))
 
 hint: https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB
 """
+x = int(input ("Введите число"))
+def z(value):
+    for i in range(1,x):
+x = z
+if x is not None:
 
-# Замените это своим кодом
 
 """
  _____         _       ____ 
