@@ -72,14 +72,14 @@ hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0
 hint: https://letpy.com/handbook/builtins/reversed/
 """
 
-def is_palindrome(value):
-    value_str = str(value).replace(" ", "").lower()
-    return value_str == value_str[::-1]
-user_input = input("Введите строку или число: ")
-if is_palindrome(user_input):
-    print(f'"{user_input}" является палиндромом.')
-else:
-    print(f'"{user_input}" не является палиндромом.')
+# def is_palindrome(value):
+#     value_str = str(value).replace(" ", "").lower()
+#     return value_str == value_str[::-1]
+# user_input = input("Введите строку или число: ")
+# if is_palindrome(user_input):
+#     print(f'"{user_input}" является палиндромом.')
+# else:
+#     print(f'"{user_input}" не является палиндромом.')
 
 """
  _____         _      _____ 
@@ -93,11 +93,26 @@ else:
 
 hint: https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB
 """
-x = int(input ("Введите число"))
-def z(value):
-    for i in range(1,x):
-x = z
-if x is not None:
+# def factorial_iterative(x):
+#     if x < 0:
+#         return "Факториал отрицательного числа не существует."
+#     result = 1
+#     for i in range(2, x + 1):
+#         result *= i
+#     return result
+
+# number = int(input("Введите число для вычисления факториала: "))
+# print(f"Факториал числа {number} равен {factorial_iterative(number)}")
+
+# def factorial_recursive(x):
+#     if x < 0:
+#         return "Факториал отрицательного числа не существует."
+#     if x == 0 or x == 1:
+#         return 1
+#     return x * factorial_recursive(x - 1)
+
+# number = int(input("Введите число для вычисления факториала: "))
+# print(f"Факториал числа {number} равен {factorial_recursive(number)}")
 
 
 """
@@ -114,7 +129,20 @@ hint: x <= 1 - не простые числа
 hint 2: %
 """
 
-# Замените это своим кодом
+
+# def is_prime(x):
+#     if x <= 1:
+#         return False
+#     for i in range(2, int(x ** 0.5) + 1):
+#         if x % i == 0:
+#             return False
+#     return True
+
+# user_input = int(input("Введите число: "))
+# if is_prime(user_input):
+#     print(f"{user_input} является простым числом.")
+# else:
+#     print(f"{user_input} не является простым числом.")
 
 """
  _____         _      ______
@@ -129,7 +157,12 @@ hint 2: %
 hint: циклы
 """
 
-# Замените это своим кодом
+
+# def sum_of_digits(number):
+#     return sum(int(digit) for digit in str(number) if digit.isdigit())
+# user_input = input("Введите число: ")
+# result = sum_of_digits(user_input)
+# print(f"Сумма всех цифр числа {user_input} равна {result}.")
 
 """
  _____         _      _____ 
@@ -145,7 +178,16 @@ hint: 1, 1, 2, 3 https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D
 hint 2: попробуйте решить с помощью рекурсии
 """
 
-# Замените это своим кодом
+# def fibonacci_up_to(max_value):
+#     sequence = []
+#     a, b = 0, 1
+#     while a <= max_value:
+#         sequence.append(a)
+#         a, b = b, a + b
+#     return sequence
+# max_value = int(input("Введите максимальное значение для последовательности Фибоначчи: "))
+# fibonacci_sequence = fibonacci_up_to(max_value)
+# print("Последовательность Фибоначчи до", max_value, ":", fibonacci_sequence)
 
 
 
